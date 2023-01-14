@@ -300,3 +300,75 @@ nav {
 }
 
 /* About Css Ends */
+
+
+
+/* Facts Css Starts */
+
+.facts-section {}
+
+.facts__container {
+    max-width: 1390px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.facts__intro {
+    margin-bottom: 100px;
+}
+
+.facts__title {
+    margin-bottom: 24px;
+}
+
+.facts__text {}
+
+.facts__info__wrappper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 125px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact__info-box {
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.fact__info-box:hover{
+    box-shadow: rgba(136, 165, 191, 0.48) 0px 6px 16px 0px, rgba(255, 255, 255, 0.8) 0 -6px 16px 0px;
+    transform: translateY(-10px);
+}
+
+.fact__info-box img {
+    width: 45px;
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+.fact__count {
+    font-family: var(--site-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    color: #424242;
+    margin-bottom: 5px;
+}
+
+.fact__title {
+    font-family: var(--site-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--gray-color);
+
+}
+
+/* Facts Css Ends */
