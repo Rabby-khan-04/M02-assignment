@@ -372,3 +372,40 @@ nav {
 }
 
 /* Facts Css Ends */
+
+
+
+/* Sponspors Css Starts */
+
+.sponspors{
+    padding: 180px 0 130px;
+}
+
+.sponsors__intro{
+    max-width: 542px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponsors__intro__tilte{
+    margin-bottom: 24px;
+}
+
+.sponsors__intro__text{}
+
+.sponsors__images{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sponsors__images img{
+    width: 160px;
+    filter: grayscale(100%);
+}
+
+/* Sponspors Css Ends */
