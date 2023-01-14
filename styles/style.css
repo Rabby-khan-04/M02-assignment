@@ -376,10 +376,131 @@ nav {
 
 
 
-/* Sponspors Css Starts */
+/* Pricing Css Starts */
+
+.pricing {
+    margin-top: 130px;
+}
+
+.pricing_container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.pricing__intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing__sub-title {
+    font-family: var(--site-font);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.pricing__sub-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: var(--primary-color);
+}
+
+.pricing__sub-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: var(--primary-color);
+}
+
+.pricing__title {}
+
+.pricings__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.pricing__card {
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: #fff;
+    box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.pricing__card:hover{
+    box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+    transform: translateY(10px);
+}
+
+.pricing__card img {
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pricing__list {
+    padding: 24px;
+}
+
+.pricing__item {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 500;
+    font-family: var(--site-font);
+}
+
+.pricing__item i {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.pricing__amount {
+    background-color: #f8f9fa;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.pricing__amount .amount {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: var(--site-font);
+    color: var(--black-color);
+}
+
+.pricing__btn{
+    padding: 15px 20px;
+}
+
+/* Pricing Css Ends */
+
+
+
+/* Sponsors Css Starts */
 
 .sponspors {
-    padding: 180px 0 130px;
+    padding: 130px 0;
 }
 
 .sponsors__intro {
@@ -409,7 +530,7 @@ nav {
     filter: grayscale(100%);
 }
 
-/* Sponspors Css Ends */
+/* Sponsors Css Ends */
 
 
 
