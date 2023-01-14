@@ -151,3 +151,56 @@ nav {
 .banner__image {}
 
 /* Banner Css Ends */
+
+
+
+/* Team Css Starts */
+
+.team {
+    padding: 85px 0 130px;
+}
+
+.team__container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+}
+
+.team__images {
+    width: 54%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+}
+
+.team__text img {}
+
+.team__description {
+    width: 41%;
+}
+
+.team__title {
+    margin-bottom: 24px;
+}
+
+.light-gray {
+    font-weight: 500;
+color: var(--gray-color);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.team__text {
+    margin-bottom: 32px;
+}
+
+/* Team Css Ends */
