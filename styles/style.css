@@ -433,6 +433,8 @@ nav {
 .pricings__wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -444,7 +446,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-.pricing__card:hover{
+.pricing__card:hover {
     box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
     transform: translateY(10px);
 }
@@ -489,7 +491,7 @@ nav {
     color: var(--black-color);
 }
 
-.pricing__btn{
+.pricing__btn {
     padding: 15px 20px;
 }
 
@@ -555,4 +557,200 @@ footer {}
 
 }
 
+.footer__copy-right br{
+    display: none;
+}
+
 /* Footer Css Ends */
+
+
+
+/* !======================
+   Responsive Css Start
+   !======================*/
+
+
+@media all and (max-width: 1440px) {
+    .facts__info__wrappper {
+        gap: 20px;
+        justify-content: space-between;
+    }
+}
+
+@media all and (max-width: 1180px) {
+    .about__container {
+        flex-direction: column;
+    }
+
+    .about__details,
+    .about__image {
+        width: 100%;
+    }
+
+    .features-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .features__item {
+        margin-bottom: 0;
+    }
+
+    .exp_badge {
+        position: static;
+    }
+
+    .facts__intro {
+        margin-bottom: 60px;
+    }
+
+    .facts__info__wrappper {
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .fact__info-box {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .sponspors {
+        padding: 100px 0;
+    }
+
+}
+
+@media all and (max-width: 980px) {
+
+    .logo__text {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .sponsors__images {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-gap: 30px;
+        justify-items: center;
+    }
+
+    .sponspors {
+        padding: 80px 0;
+    }
+
+}
+
+
+@media all and (max-width: 768px) {
+
+    .logo__text {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .nav__menu {
+        gap: 30px;
+    }
+
+    .team__container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .team__images {
+        width: 100%;
+    }
+
+    .team__description {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .team {
+        padding: 60px 0 100px;
+    }
+
+    .pricing__card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .pricing__card img {
+        height: auto;
+    }
+
+    .pricings__wrapper {
+        gap: 0px;
+    }
+    .about {
+        padding-bottom: 60px;
+    }
+
+    .footer__copy-right br{
+        display: block;
+    }
+    
+}
+
+@media all and (max-width: 576px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav__menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner {
+        padding: 30px 0;
+    }
+
+    .intro__title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .team__images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .exp__title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .exp__test {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .facts__info__wrappper {
+        gap: 0;
+    }
+
+    .fact__info-box {
+        width: 100%;
+    }
+
+    .sponspors {
+        padding: 60px 0;
+    }
+
+    .sponsors__images {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+
+    .sponsors__images img {
+        filter: grayscale(100%);
+    }
+}
