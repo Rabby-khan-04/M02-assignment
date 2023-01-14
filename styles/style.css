@@ -5,7 +5,7 @@
 
 /* root Css */
 
-:root{
+:root {
     --site-font: 'Work Sans', sans-serif;
     --primary-color: #FF900E;
     --white-color: #fff;
@@ -17,7 +17,7 @@
 
 /* Reset Code */
 
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -25,3 +25,94 @@
     box-sizing: border-box;
     font-family: var(--site-font);
 }
+
+img {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* Common CSS */
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+
+.section__title {
+    font-family: var(--site-font);
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--black-color);
+}
+
+
+.section__text {
+    font-family: var(--site-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--gray-color);
+}
+
+
+.btn--primary {
+    font-family: var(--site-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+
+/* Header Css Starts */
+
+header {
+    background-color: var(--alt-bg-color);
+    padding: 50px 0;
+}
+
+nav {
+    max-width: 1452px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-logo {}
+
+.logo__text {}
+
+.nav__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+.nav__item {}
+
+.nav__link {
+    font-family: var(--site-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #424242;
+
+}
+
+
+
+/* Header Css Ends */
