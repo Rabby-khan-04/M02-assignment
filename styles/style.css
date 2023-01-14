@@ -1,0 +1,27 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* root Css */
+
+:root{
+    --site-font: 'Work Sans', sans-serif;
+    --primary-color: #FF900E;
+    --white-color: #fff;
+    --black-color: #131313;
+    --gray-color: #727272;
+    --alt-bg-color: #ff900e1a;
+}
+
+
+/* Reset Code */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: var(--site-font);
+}
