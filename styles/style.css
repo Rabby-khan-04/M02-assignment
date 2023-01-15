@@ -116,6 +116,78 @@ nav {
 }
 
 
+/* Mobile Menu Css Starts */
+
+.ham-burger__menu{
+    display: none;
+}
+
+input#menu__btn{
+    display: none;
+}
+
+.togol__btn{
+    display: inline-block;
+    width: 30px;
+    top: 20px;
+    left: 15px;
+}
+
+.dash{
+    height: 3px;
+    background-color: var(--black-color);
+    transition: .3s;
+}
+
+.dash--two, .dash--three{
+    margin-top: 4px;
+}
+
+#menu__btn:checked ~ .togol__btn > .dash--one{
+    opacity: 0;
+}
+#menu__btn:checked ~ .togol__btn > .dash--two{
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+#menu__btn:checked ~ .togol__btn > .dash--three{
+    transform: rotate(-135deg);
+    margin-top: -4px;
+}
+
+.off-canvas__menu {
+    padding-top: 20px;
+	position: fixed;
+    z-index: 99;
+	top: 115px;
+	right: 0;
+	width: 250px;
+	background-color: var(--white-color);
+	height: 100vh;
+	transform: translateX(250px);
+	overflow: hidden;
+    transition: .3s;
+}
+
+#menu__btn:checked ~ .off-canvas__menu{
+    transform: translate(0);
+}
+
+
+.mobile__menu li{
+    display: block;
+    text-align: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #f8f9fa;
+    transition: 0.4s;
+}
+
+.mobile__menu li:hover{
+    background-color: #f8f9fa;
+}
+/* Mobile Menu Css Ends */
+
+
 
 /* Header Css Ends */
 
@@ -696,14 +768,12 @@ footer {}
 
 @media all and (max-width: 576px) {
 
-    nav {
-        flex-direction: column;
-        justify-content: center;
+    .nav__menu{
+        display: none;
     }
 
-    .nav__menu {
-        flex-direction: column;
-        text-align: center;
+    .ham-burger__menu{
+        display: block;
     }
 
     .banner {
